@@ -42,7 +42,7 @@ const Filter = () => {
   return (
     <> 
      <hr />
-      <div className="flex justify-between items-center px-14 py-5">
+      <div className="flex justify-between items-center px-2 sm:px-14 py-5">
         <div className="flex">
           <p className="text-sm font-semibold text-black mr-24 hidden sm:block">3425 items</p>
           <Image src="/images/left.png" alt="arrow" width={12} height={12} />

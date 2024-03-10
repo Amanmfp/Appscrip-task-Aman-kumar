@@ -28,7 +28,7 @@ const ProductDisplayPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {products.map((product) => (
           <div key={product.id} className="bg-white p-4 shadow-md">
-            <div className="image-container h-96 mb-4">
+            <div className="image-container h-52 sm:h-64 mb-4">
               <img
                 src={product.image}
                 alt={product.title}

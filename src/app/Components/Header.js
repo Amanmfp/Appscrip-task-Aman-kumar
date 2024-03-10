@@ -7,7 +7,7 @@ const Header = () => {
         {/* Left Section - Brand Logo */}
         <div className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo-img.png"
             alt="Brand Logo"
             width={40}
             height={40}
@@ -15,7 +15,7 @@ const Header = () => {
         </div>
 
         {/* Center Section - Brand Name */}
-        <span className="text-black font-inter text-3xl font-extrabold leading-11 tracking-wider text-left">
+        <span className="text-black font-inter text-xl sm:text-3xl font-extrabold leading-11 tracking-wider text-left">
           LOGO
         </span>
 
