@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer className="bg-black">
         <div className="block sm:grid sm:grid-cols-1 md:grid-cols-2 gap-4 m-4 pt-16 md:m-10">
-          <div className="p-4 pl-16">
+          <div className="p-4 pl-10 lg:pl-16">
             <h3 className="text-lg font-bold leading-6 mb-3">
               Be The First To Know
             </h3>
@@ -13,7 +13,7 @@ export default function Footer() {
               Sign Up for updates from meta musse.
             </p>
             <input
-              className="p-2 ps-4 w-40 sm:w-60 font-simplon-norm text-base font-normal leading-6 tracking-normal text-left text-black"
+              className="p-2 lg:ps-4 w-36 sm:w-60 font-simplon-norm text-base font-normal leading-6 tracking-normal text-left text-black placeholder-sm"
               placeholder="Enter Your Email..."
             ></input>
             <button className="md:ml-5 mt-2 md:mt-0 text-white py-2 px-4 border border-gray-400 rounded shadow font-medium text-base leading-7">
@@ -23,7 +23,7 @@ export default function Footer() {
           {/* <div className="p-4 pl-16 lg:pl-0">
             <hr className="sm:hidden" />
           </div> */}
-          <div className="p-4 pl-16 lg:pl-0">
+          <div className="p-4 pl-10 lg:pl-0">
             <h3 className="text-lg font-bold leading-6 mb-3">CONTACT US</h3>
             <p className="font-normal text-base leading-6 mb-3">
               +44 221 133 5360
@@ -42,7 +42,7 @@ export default function Footer() {
               />
               <span className="ml-1">USD</span>
             </div>
-            <p className="font-normal text-sm leading-4">
+            <p className="hidden lg:block font-normal text-sm leading-4">
               Transactions will be completed in Euros and a currency reference
               is available on hover.
             </p>
@@ -51,11 +51,22 @@ export default function Footer() {
 
         <hr></hr>
         <div className="block lg:grid lg:grid-cols-2 m-10 mb-2">
-          <div className="p-4">
-            <div className="block lg:grid lg:grid-cols-2 ms-11">
-              <div className="p-4">
-                <h3 className="font-bold text-lg leading-8 mb-2">mettā muse</h3>
-                <ul>
+          <div className="p-1 sm:p-4">
+            <div className="block lg:grid lg:grid-cols-2 ms-2 lg:ms-11">
+              <div className="p-1 lg:p-4">
+                <div className="flex justify-between">
+                  <h3 className="font-bold text-lg leading-8 mb-2">
+                    mettā muse
+                  </h3>
+                  <Image
+                    src="/images/arrow-left.png"
+                    alt="arrow"
+                    width={12}
+                    height={12}
+                  />
+                </div>
+                <hr className="lg:hidden" />
+                <ul className="hidden lg:block">
                   <li className="font-normal text-base leading-7 mb-1">
                     About US
                   </li>
@@ -76,11 +87,20 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="p-4">
-                <h3 className="font-bold text-lg leading-8 mb-2">
-                  QUICK LINKS
-                </h3>
-                <ul>
+              <div className="p-1 lg:p-4">
+                <div className="flex justify-between">
+                  <h3 className="font-bold text-lg leading-8 mb-2">
+                    QUICK LINKS
+                  </h3>
+                  <Image
+                    src="/images/arrow-left.png"
+                    alt="arrow"
+                    width={12}
+                    height={12}
+                  />
+                </div>
+                <hr className="lg:hidden" />
+                <ul className="hidden lg:block">
                   <li className="font-normal text-base leading-7 mb-1">
                     Orders & shipping
                   </li>

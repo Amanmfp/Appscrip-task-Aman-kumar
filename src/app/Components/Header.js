@@ -5,7 +5,14 @@ const Header = () => {
     <header>
       <div className="flex justify-between items-center py-4 px-6 pl-6 sm:pl-32  bg-white text-white">
         {/* Left Section - Brand Logo */}
-        <div className="flex items-center">
+        <div className="flex gap-2 items-center">
+          <Image
+            className="sm:hidden"
+            src="/images/hamburger.png"
+            alt="hamburger"
+            width={30}
+            height={30}
+          />
           <Image
             src="/images/logo-img.png"
             alt="Brand Logo"
@@ -30,7 +37,8 @@ const Header = () => {
           />
 
           {/* Profile Icon */}
-          <Image className="hidden lg:block"
+          <Image
+            className="hidden lg:block"
             src="/images/profile.png"
             alt="profile-img"
             width={30}
