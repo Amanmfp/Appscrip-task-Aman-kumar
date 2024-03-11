@@ -20,9 +20,6 @@ export default function Footer() {
               Subscribe
             </button>
           </div>
-          {/* <div className="p-4 pl-16 lg:pl-0">
-            <hr className="sm:hidden" />
-          </div> */}
           <div className="p-4 pl-10 lg:pl-0">
             <h3 className="text-lg font-bold leading-6 mb-3">CONTACT US</h3>
             <p className="font-normal text-base leading-6 mb-3">

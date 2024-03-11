@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image";
+
 
 const ProductDisplayPage = () => {
   const [products, setProducts] = useState([]);
@@ -18,10 +20,6 @@ const ProductDisplayPage = () => {
     fetchProducts();
   }, []);
 
-  const handleLikeClick = (productId) => {
-    // Your logic to handle liking a product
-  };
-
   return (
     <div className="container mx-auto py-8">
       <h1 className="text-2xl font-semibold mb-4">Product Display Page</h1>
@@ -35,16 +33,27 @@ const ProductDisplayPage = () => {
                 className="object-contain w-full h-full"
               />
             </div>
-
-            <h2 className="font-simplon-norm text-black font-semibold text-lg leading-6">
-              {product.title.length > 18
-                ? product.title.slice(0, 18) + "..."
-                : product.title}
-            </h2>
-            <p className="text-gray-600 text-sm mt-2 mb-2">
-              <span className="underline text-blue-400">Sign In</span>
-              <span>  Create an account to see pricing</span>
-            </p>
+            <div className="flex justify-between">
+              <div>
+                <h2 className="font-simplon-norm text-black font-semibold text-lg leading-6">
+                  {product.title.length > 18
+                    ? product.title.slice(0, 18) + "..."
+                    : product.title}
+                </h2>
+                <p className="text-gray-600 text-sm mt-2 mb-2">
+                  <span className="underline text-blue-400">Sign In</span>
+                  <span>  Create an account to see pricing</span>
+                </p>
+              </div>
+              <div>
+                <Image
+                  src="/images/heart.png"
+                  alt="heart"
+                  width={20}
+                  height={20}
+                />
+              </div>
+            </div>
           </div>
         ))}
       </div>
